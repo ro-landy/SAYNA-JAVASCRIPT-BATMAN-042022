@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* header */
+#navigation{
+    background-image: url('assets/Illustrations/Game/Batgame1.png');
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: 850px;
+}
+.top_bar{
+    border-bottom: 2px solid #c4c4c46e;
+    padding-bottom: 30px;
+}
+aside{
+    position: absolute;
+    top: 45%;
+    left: 88%;
+}
+.menu a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.play{
+    padding-left: 4.5%;
+    padding-top: 18%;
+}
+
+/* body */
+main{
+    background-color: #000000;
+    height: 5100px;
+}
+
+/* section1 */
+.fleche{
+    padding-left: 45%;
+}
+
+/* section 2 */
+.quiz{
+    padding-left: 4.5%;
+    padding-top: 15%;
+}
+
+/* quiz niveau 1 */
+.back1{
+    background-color: #817d7d;
+    height: 35px;
+    width: 370px;
+}
+
+/* quiz niveau 2 */
+.quiz2{
+    padding-top: 12%;
+}
+.imagedernier{
+    padding-left: 5%;
+}
+#redemarrer{
+    border: none;
+    background-image: linear-gradient(to bottom right ,#EDDEBF ,#890008);
+    margin-top: 8%;
+    width: 30%;
+    height: 70px;
+    margin-left: 32%; 
+}
+.text-pink{
+    background-color:  #ce0f1c;
+}
+.text-pink a{
+    text-decoration: none;
+}
+
+/* footer */
+footer{
+    margin-top: 15%;
+    font-size: 12px;
+}
+footer figure img{
+    width: 25px;
+    height: 25px;
+}

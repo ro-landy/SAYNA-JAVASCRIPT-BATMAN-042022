@@ -1,0 +1,76 @@
+body{
+    margin: 0%;
+    padding: 0; 
+    box-shadow: none;
+    background-color: rgb(0, 0, 0);
+}
+header{
+    background-image: url('assets/Illustrations/Home/Bathome1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+header .top_bar{
+    border-bottom: 2px solid #c4c4c46e;
+    padding-bottom: 30px;
+}
+header .container menu{
+    font-size: 22px;
+}
+header .container nav a{
+    text-decoration: none; 
+}
+header .container p{
+    margin-top: 20%;
+}
+header .container strong{
+    font-size: 22px;
+}
+header .container .buttons .btn{
+    border: 1px solid white;
+}
+header .container aside{
+    position: absolute;
+    top: 45%;
+    left: 88%;
+}
+main .multimedia .card{
+    width: 400px;
+    height: 250px; 
+    border-radius: 0px 10px 10px 0px;
+}
+main .multimedia .card p{
+    font-size: 12px;
+}
+main .multimedia .card span{
+    color: #FFFF00;
+}
+main .contact{
+    background-image: linear-gradient(to bottom right, #292827, #162229);
+}
+main .contact input, main .contact select{
+    background-color:unset;
+    border:none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.418);
+}
+main .contact input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+}
+main .contact label{
+    font-size: 20px;
+}
+main .contact form button{
+    border: 2px solid white;
+}
+
+main .contact form .btn-confirmer{
+    border: none;
+    background-image: linear-gradient(to bottom right, #EDDEBF, #890008);
+}
+.footer{
+    margin-top: 20%;
+}
+.footer p span{
+    font-size: 12px;
+}
