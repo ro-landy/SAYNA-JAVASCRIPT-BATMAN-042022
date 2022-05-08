@@ -4,12 +4,15 @@ body{
     box-shadow: none;
     background-color: rgb(0, 0, 0);
 }
+
+/* Header */
 header{
     background-image: url('assets/Illustrations/Home/Bathome1.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 900px;
 }
+
 .border_left_right{
     border-left: 2px solid whitesmoke;
     border-right: 2px solid whitesmoke;
@@ -57,6 +60,7 @@ header .container aside{
     top: 45%;
     left: 89%;
     transition: all .5s;
+    z-index: 1000;
 }
 header .container aside a:hover{
     transition: all .3s;
@@ -64,6 +68,8 @@ header .container aside a:hover{
 header .container aside a img:hover{
     color: rgb(228, 207, 21);
 }
+
+/* Section multimedia */
 main .multimedia .card{
     width: 400px;
     height: 250px; 
@@ -75,6 +81,53 @@ main .multimedia .card p{
 main .multimedia .card span{
     color: #FFFF00;
 }
+main .multimedia #media{
+    transition: all .5s;
+}
+main .multimedia #media:hover{
+    box-shadow: 2px 2px 30px 5px #faf9f991;
+    cursor: pointer;
+    transform: scale(1.01, 1.01);
+}
+
+/* Section cinema */
+main .cinema .images, main .nemesis .images{
+    height: 450px;
+}
+main .cinema .images article, main .nemesis .images article{
+    width: 300px;
+}
+main .cinema img, main .nemesis img{
+    cursor: pointer;
+    transition: all .3s;
+}
+main .cinema article img:hover, main .nemesis article img:hover{
+    transform: scale(1.3, 1.2);
+}
+:is(main .cinema article) #robert_pattinson, #christian_bale, #ben_affleck{
+    top: 40.5cm;
+    opacity: .3;
+    background-image: linear-gradient(to bottom right, #EDDEBF, #890008);
+    border-radius: 0px 30px 30px 100px;
+    width: 270px;
+}
+:is(main .cinema article) #robert_pattinson img:hover, #christian_bale img:hover, #ben_affleck img:hover{
+    transform: scale(1, 1);
+}
+:is(main .nemesis article) #paul_dano, #heath_ledger, #ray_porter{
+    top: 72.5cm;
+    opacity: .3;
+    background-image: linear-gradient(to bottom right, #EDDEBF, #890008);
+    border-radius: 0px 30px 30px 100px;
+    width: 270px;
+}
+
+/* flèche */
+#icon_next, #icon_prev{
+    cursor: pointer;
+}
+
+/* Section contacte */
 main .contact{
     background-image: linear-gradient(to bottom right, #292827, #162229);
 }
@@ -93,11 +146,26 @@ main .contact label{
 main .contact form button{
     border: 2px solid white;
 }
-
+main .contact .buttons button{
+    border-color: rgba(221, 218, 218, 0.644);
+    border-width: 1px 0px 0px 1px;
+    transition: all .5s;
+}
+main .contact .buttons button:hover{
+    background-image: linear-gradient(to bottom right, #EDDEBF, #19587D);
+    transform: scale(1.1, 1.1);
+}
 main .contact form .btn-confirmer{
     border: none;
     background-image: linear-gradient(to bottom right, #EDDEBF, #890008);
+    opacity: .6;
+    transition: all .5s;
 }
+main .contact form .btn-confirmer:hover{
+    opacity: 1;
+    transform: scale(1.1, 1.1);
+}
+/* Footer */
 .footer{
     margin-top: 20%;
 }
@@ -110,10 +178,21 @@ main .contact form .btn-confirmer{
 
 /* Animation */
 .aside_move{
-    animation: move_aside .3s linear;
+    animation: move_aside .5s linear;
 }
-
 @keyframes move_aside {
     from {top: 30%;}
     to {top: 45%;}
+}
+.translate_title{
+    animation: translate_header 1s linear;
+}
+@keyframes translate_header {
+    from { 
+        opacity: .3;
+        margin-left: -15%;
+    }
+    to { 
+        opacity: 1;
+    }
 }

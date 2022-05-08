@@ -2,16 +2,16 @@ $(document).ready(function(){
 
     // Test
 
-    $('h1').mouseover(()=>{
-        $('h1')
-    })
-
     // Scroll event
     window.onscroll = function() {
+
         // Scroll aside
         $('aside').addClass('aside_move')
+        $('h1').addClass('translate_title')
+
         setTimeout(() => {
-                $('aside').removeClass('aside_move')
+            $('aside').removeClass('aside_move')
+            $('h1').removeClass('translate_title')
         }, 1000)
     };
     
@@ -55,5 +55,104 @@ $(document).ready(function(){
         $('#icon img:nth-child(4)').mouseleave(() => $('#icon img:nth-child(4)').attr('src', 'assets/logos/icon_facebook.png'))
         $('#icon img:nth-child(5)').mouseleave(() => $('#icon img:nth-child(5)').attr('src', 'assets/logos/icon_ig.png'))
         $('#icon img:nth-child(6)').mouseleave(() => $('#icon img:nth-child(6)').attr('src', 'assets/logos/icon_tw.png'))
+    })
+
+    // Cinema mouse enter 
+    $('main .cinema article').mouseenter(() => {
+        // robert_pattinson
+        $('main .cinema article:nth-child(1) img').mouseenter(() => {
+            setTimeout(()=>{
+                $('#robert_pattinson').addClass('d-flex justify-content-around align-items-center')
+                $('#robert_pattinson').removeClass('d-none')
+            }, 100)
+        });
+        // christian_bale
+        $('main .cinema article:nth-child(2) img').mouseenter(() => {
+            setTimeout(()=>{
+                $('#christian_bale').addClass('d-flex justify-content-around align-items-center')
+                $('#christian_bale').removeClass('d-none')
+            }, 100)
+        });
+         // ben_affleck
+         $('main .cinema article:nth-child(3) img').mouseenter(() => {
+            setTimeout(()=>{
+                $('#ben_affleck').addClass('d-flex justify-content-around align-items-center')
+                $('#ben_affleck').removeClass('d-none')
+            }, 100)
+        });
+    })
+
+    // cinema mouse leave
+    $('main .cinema article').mouseleave(() => {
+        $('main .cinema article:nth-child(1)').mouseleave(() => {
+            $('#robert_pattinson').addClass('d-none')
+            $('#robert_pattinson').removeClass('d-flex justify-content-around align-items-center')
+        });
+        $('main .cinema article:nth-child(2)').mouseleave(() => {
+            $('#christian_bale').addClass('d-none')
+            $('#christian_bale').removeClass('d-flex justify-content-around align-items-center')
+        });
+        $('main .cinema article:nth-child(3)').mouseleave(() => {
+            $('#ben_affleck').addClass('d-none')
+            $('#ben_affleck').removeClass('d-flex justify-content-around align-items-center')
+        });
+    })
+
+    // Carousel cinema
+    $("#slider_image").carousel({interval: 3000}); 
+
+    // Cinema mouse enter 
+    $('main .nemesis article').mouseenter(() => {
+        // robert_pattinson
+        $('main .nemesis article:nth-child(1) img').mouseenter(() => {
+            setTimeout(()=>{
+                $('#paul_dano').addClass('d-flex justify-content-around align-items-center')
+                $('#paul_dano').removeClass('d-none')
+            }, 100)
+        });
+        // christian_bale
+        $('main .nemesis article:nth-child(2) img').mouseenter(() => {
+            setTimeout(()=>{
+                $('#heath_ledger').addClass('d-flex justify-content-around align-items-center')
+                $('#heath_ledger').removeClass('d-none')
+            }, 100)
+        });
+         // ben_affleck
+         $('main .nemesis article:nth-child(3) img').mouseenter(() => {
+            setTimeout(()=>{
+                $('#ray_porter').addClass('d-flex justify-content-around align-items-center')
+                $('#ray_porter').removeClass('d-none')
+            }, 100)
+        });
+    })
+
+    // nemesis mouse leave
+    $('main .nemesis article').mouseleave(() => {
+        $('main .nemesis article:nth-child(1)').mouseleave(() => {
+            $('#paul_dano').addClass('d-none')
+            $('#paul_dano').removeClass('d-flex justify-content-around align-items-center')
+        });
+        $('main .nemesis article:nth-child(2)').mouseleave(() => {
+            $('#heath_ledger').addClass('d-none')
+            $('#heath_ledger').removeClass('d-flex justify-content-around align-items-center')
+        });
+        $('main .nemesis article:nth-child(3)').mouseleave(() => {
+            $('#ray_porter').addClass('d-none')
+            $('#ray_porter').removeClass('d-flex justify-content-around align-items-center')
+        });
+    })
+
+    // Carousel multimedia
+    $('#icon_next').click(function(){
+        $("#slider_multimedia").carousel('next'); 
+    })
+    $('#icon_prev').click(() => {
+        $("#slider_multimedia").carousel('prev'); 
+    })
+
+    // checkbox
+    $('#check').click(() => {
+        $('#check').hide()
+        $('#envelop').removeClass('d-none')
     })
 })

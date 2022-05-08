@@ -28,8 +28,8 @@
                 <strong>Il est Batman</strong>
             </p>
             <div class="buttons d-flex justify-content-center mt-5">
-                <button class="btn btn-default text-light mx-3 px-5">VOIR LE HEROS</button>
-                <button class="btn btn-default text-light mx-3 px-5">LES ADVERSAIRES</button>
+                <a href="#content"><button class="btn btn-default text-light mx-3 px-5">VOIR LE HEROS</button></a>
+                <a href="#nemesis"><button class="btn btn-default text-light mx-3 px-5">LES ADVERSAIRES</button></a>
             </div>
             <aside class="d-flex flex-column align-items-center">
                 <a href="#top"><img src="assets/logos/logo_bat_flèche.png" alt="logo bat arrow up" width="80" height="40"></a>
@@ -56,16 +56,73 @@
                     acteurs d'interpréter l'homme chauve souris. Voici les trois derniers:<br>
                 </p>
                 <div class="images py-5 d-flex justify-content-between">
-                    <img src="assets/Illustrations/Home/Bathome2.png" alt="bat home" width="250" height="400">
-                    <img src="assets/Illustrations/Home/Bathome3.png" alt="bat home" width="250" height="400">
-                    <img src="assets/Illustrations/Home/Bathome4.png" alt="bat home" width="250" height="400">
+                    <article>
+                        <img src="assets/Illustrations/Home/Bathome2.png" alt="bat home" width="250" height="400">
+                        <div class="info position-absolute d-none p-2" id="robert_pattinson">
+                            <img src="assets/Illustrations/Home/Robert_Pattinson.png" alt="Robert_Pattinson">
+                            <div class="">
+                                <span>Robert_Pattinson <br> 2022 </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="assets/Illustrations/Home/Bathome3.png" alt="bat home" width="250" height="400">
+                        <div class="info position-absolute d-none p-2" id="christian_bale">
+                            <img src="assets/Illustrations/Home/Christian_Bale.png" alt="Christian_Bale">
+                            <div class="">
+                                <span>Christian_Bale <br> 2006-2008-2012 </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="assets/Illustrations/Home/Bathome4.png" alt="bat home" width="250" height="400">
+                        <div class="info position-absolute d-none p-2" id="ben_affleck">
+                            <img src="assets/Illustrations/Home/Ben_Affleck.png" alt="Ben_Affleck">
+                            <div class="">
+                                <span>Ben_Affleck <br> 2006-2008-2012 </span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
-        <section class="slider_image">
-            <img src="assets/Illustrations/Home/Batslider1.png" alt="slider 1" width="100%" height="430">
+        <section class="slider_image py-3">
+            <div class="carousel slide" id="slider_image">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/Illustrations/Home/Batslider1.png" alt="slider 1" width="100%" height="430">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/Illustrations/Home/Batslider2.png" alt="slider 2" width="100%" height="430">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/Illustrations/Home/Batslider3.png" alt="slider 3" width="100%" height="430">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/Illustrations/Home/Batslider4.png" alt="slider 4" width="100%" height="430">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/Illustrations/Home/Batslider5.png" alt="slider 5" width="100%" height="430">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/Illustrations/Home/Batslider6.png" alt="slider 6" width="100%" height="430">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/Illustrations/Home/Batslider7.png" alt="slider 7" width="100%" height="430">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/Illustrations/Home/Batslider8.png" alt="slider 8" width="100%" height="430">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/Illustrations/Home/Batslider9.png" alt="slider 9" width="100%" height="430">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/Illustrations/Home/Batslider10.png" alt="slider 10" width="100%" height="430">
+                    </div>
+                  </div>
+            </div>
         </section>
-        <section class="nemesis text-light">
+        <section class="nemesis text-light" id="nemesis">
             <div class="container px-5">
                 <h1 class="pt-5 text-uppercase">Némésis</h1>
                 <p>
@@ -76,46 +133,99 @@
                     derniers ennemis emblématiques que nous avons pu voir au cinéma, on retouve
                 </p>
                 <div class="images py-5 d-flex justify-content-between">
-                    <img src="assets/Illustrations/Home/Bathome5.png" alt="bat home" width="250" height="400">
-                    <img src="assets/Illustrations/Home/Bathome6.png" alt="bat home" width="250" height="400">
-                    <img src="assets/Illustrations/Home/Bathome7.png" alt="bat home" width="250" height="400">
+                    <article class="">
+                        <img src="assets/Illustrations/Home/Bathome5.png" alt="bat home" width="250" height="400">
+                        <div class="info position-absolute d-none p-2" id="paul_dano">
+                            <img src="assets/Illustrations/Home/Paul_Dano.png" alt="Paul_Dano">
+                            <div class="">
+                                <span> Darkseid <br> Paul Dano - 2020 </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="">
+                        <img src="assets/Illustrations/Home/Bathome6.png" alt="bat home" width="250" height="400">
+                        <div class="info position-absolute d-none p-2" id="heath_ledger">
+                            <img src="assets/Illustrations/Home/Heath_Ledger.png" alt="Heath_Ledger">
+                            <div class="">
+                                <span> Darkseid <br> Heath Ledger - 2020 </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="">
+                        <img src="assets/Illustrations/Home/Bathome7.png" alt="bat home" width="250" height="400">
+                        <div class="info position-absolute d-none p-2" id="ray_porter">
+                            <img src="assets/Illustrations/Home/Ray_Porter.png" alt="Ray_Porter">
+                            <div class="text-center">
+                                <span> Darkseid <br> Ray Poter - 2020 </span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
-        <section class="multimedia text-light mb-5">
+        <section class="multimedia text-light mb-5 mt-5">
             <div class="container px-5">
                 <h1 class="text-uppercase py-5">Multimédia</h1>
                 <div class="slider_media d-flex justify-content-between align-items-center py-5">
-                    <img src="assets/logos/icon_flèche_1.png" alt="icon arrow prev">
-                    <div class="d-flex">
-                        <img src="assets/Illustrations/Home/Bathome8.png" alt="batman begin">
-                        <article class="card bg-dark">
-                            <div class="card-body">
-                                <h6>ACTION, ADVENTURE</h6>
-                                <h5>Batman begins</h5>
-                                <h6>IMDB: <span>8.2</span> </h6>
-                                <p>
-                                    Le jeune Bruce Wayne assiste impuissant au meurtre de ses <br>
-                                    parents. Profondément traumatisé, il grandit obnublié par un <br>
-                                    désir de vengeance. La Ligue des ombres, un secte de <br>
-                                    guerriers ninja dirigée par Ra's al Ghul, se chargera de son <br>
-                                    entraînement. De retour chez lui à Gotham, avec l'aide de son <br>
-                                    majordome Alfred Pennyworth, Bruce Wayne se lance alors <br>
-                                    dans la lutte contre le crime sous le nom de Batman. 
-                                </p>
+                    <img src="assets/logos/icon_flèche_1.png" alt="icon arrow prev" id="icon_prev">
+                    <div class="carousel slide" id="slider_multimedia">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/Illustrations/Home/Bathome8.png" alt="batman begin">
+                                    <article class="card bg-dark">
+                                        <div class="card-body">
+                                            <h6>ACTION, ADVENTURE</h6>
+                                            <h5>Batman begins</h5>
+                                            <h6>IMDB: <span>8.2</span> </h6>
+                                            <p>
+                                                Le jeune Bruce Wayne assiste impuissant au meurtre de ses <br>
+                                                parents. Profondément traumatisé, il grandit obnublié par un <br>
+                                                désir de vengeance. La Ligue des ombres, un secte de <br>
+                                                guerriers ninja dirigée par Ra's al Ghul, se chargera de son <br>
+                                                entraînement. De retour chez lui à Gotham, avec l'aide de son <br>
+                                                majordome Alfred Pennyworth, Bruce Wayne se lance alors <br>
+                                                dans la lutte contre le crime sous le nom de Batman. 
+                                            </p>
+                                        </div>
+                                    </article>
+                                </div>
                             </div>
-                        </article>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/Illustrations/Home/Bathome11_slide_ba.png" alt="batman begin">
+                                    <article class="card bg-dark">
+                                        <div class="card-body">
+                                            <h6>ACTION, ADVENTURE</h6>
+                                            <h5>The Dark Knight Rises</h5>
+                                            <h6>IMDB: <span>8.4</span> </h6>
+                                            <p>
+                                                Le jeune Bruce Wayne assiste impuissant au meurtre de ses <br>
+                                                parents. Profondément traumatisé, il grandit obnublié par un <br>
+                                                désir de vengeance. La Ligue des ombres, un secte de <br>
+                                                guerriers ninja dirigée par Ra's al Ghul, se chargera de son <br>
+                                                entraînement. De retour chez lui à Gotham, avec l'aide de son <br>
+                                                majordome Alfred Pennyworth, Bruce Wayne se lance alors <br>
+                                                dans la lutte contre le crime sous le nom de Batman. 
+                                            </p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <img src="assets/logos/icon_flèche_2.png" alt="icon arrow next">
+                    <img src="assets/logos/icon_flèche_2.png" alt="icon arrow next" id="icon_next">
                 </div>
                 <div class="py-3">
-                    <img src="assets/Illustrations/Home/Bathome9_ba.png" alt="batman" width="100%">
+                    <div id="media">
+                        <img src="assets/Illustrations/Home/Bathome9_ba.png" alt="batman" width="100%">
+                    </div>
                 </div>
             </div>
         </section>
         <section class="contact py-3 text-light mt-5" id="bottom">
             <div class="container w-50">
-                <h2 class="text-center py-5">PRENONS CONTACT</h2>
+                <h1 class="text-center py-5">PRENONS CONTACT</h1>
                 <form action="" class="mt-5" >
                     <div class="form-group">
                         <label for="">ADRESSE EMAIL</label>
@@ -125,12 +235,17 @@
                         <h4>NEWSLETTER</h4>
                         <p>
                             En cochant cette case vous acceptez de recevoir l'actualité concernant les <br>
-                            aventure de batman:  <input class="mx-2" type="checkbox" name="" id="">
+                            aventure de batman:  <input class="mx-2" type="checkbox" id="check"> <img id="envelop" src="assets/logos/icon_email.png" alt="" width="20" class="d-none">
                         </p>
                     </div>
                     <div class="form-group">
                         <select name="" id="" class="form-control">
                             <option value="" selected disabled>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
+                            <option value="">Une fois par semaine</option>
+                            <option value="">Une fois tous les deux semaines (2 fois par mois)</option>
+                            <option value="">Une fois par mois</option>
+                            <option value="">Une fois tous les trois mois</option>
+                            <option value="">Une fois tous les six mois</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -146,7 +261,7 @@
                         <input type="text" class="form-control" placeholder="Laissez un commentaire pour la communauté">
                     </div>
                     <div class="form-group d-flex justify-content-center my-5">
-                        <button class="btn btn-default btn-confirmer text-light px-5 py-3">CONFIRMER</button>
+                        <button class="btn btn-default btn-confirmer text-light px-5 py-3"  id="btn_confirmer">CONFIRMER</button>
                     </div>
                 </form>
             </div>
