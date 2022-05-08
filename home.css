@@ -175,6 +175,7 @@ main .contact form .btn-confirmer:hover{
 :is(footer #icon) img{
     cursor: pointer;
 }
+/* Modal */
 
 /* Animation */
 .aside_move{

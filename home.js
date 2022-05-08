@@ -155,4 +155,8 @@ $(document).ready(function(){
         $('#check').hide()
         $('#envelop').removeClass('d-none')
     })
+
+    // slider text footer
+    $("#slider_footer").carousel({interval: 3000}); 
+    
 })
