@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="assets/src/bootstrap.min.css">
     <link rel="stylesheet" href="home.css">
     <title>SAYNA || HOME</title>
 </head>
-<body>
-    <header class="">
-        <div class="container d-flex justify-content-between top_bar">
-            <div class="mt-5 mx-5">
+<body id="body">
+    <header class="" id="top">
+        <div class="container d-flex justify-content-between top_bar ">
+            <div class="mt-5 mx-5" id="logohome">
                 <img src="assets/logos/logohome.png" alt="logo home">
             </div>
             <nav class="mt-5 mx-5">
@@ -32,11 +32,11 @@
                 <button class="btn btn-default text-light mx-3 px-5">LES ADVERSAIRES</button>
             </div>
             <aside class="d-flex flex-column align-items-center">
-                <img src="assets/logos/logo_bat_flèche.png" alt="logo bat arrow up" width="80" height="40">
+                <a href="#top"><img src="assets/logos/logo_bat_flèche.png" alt="logo bat arrow up" width="80" height="40"></a>
                 <img src="assets/logos/icon_facebook.png" alt="icon facebook" width="30" height="30" class="my-3"> 
                 <img src="assets/logos/icon_ig.png" alt="icon instagram" width="30" height="30" class="my-3">
                 <img src="assets/logos/icon_tw.png" alt="icon tweeter" width="30" height="30" class="my-3">
-                <img src="assets/logos/logo_bat_flèche_2.png" alt="logo bat arrow down" width="80" height="40">
+                <a href="#bottom"><img src="assets/logos/logo_bat_flèche_2.png" alt="logo bat arrow down" width="80" height="40"></a>
             </aside>
         </div>
         <div class="d-flex justify-content-center mt-5 pt-5">
@@ -113,7 +113,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact py-3 text-light mt-5">
+        <section class="contact py-3 text-light mt-5" id="bottom">
             <div class="container w-50">
                 <h2 class="text-center py-5">PRENONS CONTACT</h2>
                 <form action="" class="mt-5" >
@@ -181,7 +181,7 @@
                 <span>Ce projet respecte l'Univers cinematographique des films Batman recents. Version Nonal & Snyder $Reeves</span>
             </p>
             <figure>
-                <div class="d-flex justify-content-center mb-5">
+                <div class="d-flex justify-content-center mb-5" id="icon">
                     <img width="30" src="assets/logos/logo_sayna_white.png" alt="logo_sayna_white" class="mx-2">
                     <img width="30" src="assets/logos/icon_x.png" alt="icon_x" class="mx-2">
                     <img width="30" src="assets/logos/icon_DC.png" alt="icon_DC" class="mx-2">
@@ -193,7 +193,7 @@
         </div>
     </footer>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script> -->
 <script src="assets/src/jquery.min.js"></script>
 <script src="assets/src/bootstrap.min.js"></script>
 <script src="home.js"></script>

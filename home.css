@@ -10,6 +10,10 @@ header{
     background-repeat: no-repeat;
     height: 900px;
 }
+.border_left_right{
+    border-left: 2px solid whitesmoke;
+    border-right: 2px solid whitesmoke;
+}
 header .top_bar{
     border-bottom: 2px solid #c4c4c46e;
     padding-bottom: 30px;
@@ -17,8 +21,20 @@ header .top_bar{
 header .container menu{
     font-size: 22px;
 }
+:is(header .container) #logohome, aside img{
+    cursor: pointer;
+}
+header .container nav a[href="#"]{
+    text-decoration: underline; 
+    font-weight: bolder;
+}
 header .container nav a{
-    text-decoration: none; 
+    transition: all .3s;
+}
+header .container nav a:hover{
+    text-decoration: underline;
+    color: white;
+    font-weight: bolder;
 }
 header .container p{
     margin-top: 20%;
@@ -27,12 +43,26 @@ header .container strong{
     font-size: 22px;
 }
 header .container .buttons .btn{
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    background-image: linear-gradient(to bottom right, #EDDEBF, #890008);
+    border: none;
+    opacity: .6;
+    transition: all .5s;
+}
+header .container .buttons .btn:hover{
+    opacity: 1;
 }
 header .container aside{
-    position: absolute;
+    position: fixed;
     top: 45%;
-    left: 88%;
+    left: 89%;
+    transition: all .5s;
+}
+header .container aside a:hover{
+    transition: all .3s;
+}
+header .container aside a img:hover{
+    color: rgb(228, 207, 21);
 }
 main .multimedia .card{
     width: 400px;
@@ -73,4 +103,17 @@ main .contact form .btn-confirmer{
 }
 .footer p span{
     font-size: 12px;
+}
+:is(footer #icon) img{
+    cursor: pointer;
+}
+
+/* Animation */
+.aside_move{
+    animation: move_aside .3s linear;
+}
+
+@keyframes move_aside {
+    from {top: 30%;}
+    to {top: 45%;}
 }

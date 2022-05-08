@@ -17,15 +17,25 @@
 aside{
     position: absolute;
     top: 45%;
-    left: 88%;
+    left: 89%;
 }
 .menu a{
     color: #ffffff;
     text-decoration: none;
+    transition: all .3s; 
+}
+.menu a[href="#"]{
+    text-decoration: underline;
+    font-weight: bolder;
 }
 .play{
     padding-left: 4.5%;
     padding-top: 18%;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    color: white;
+    font-weight: bolder;
 }
 
 /* body */
