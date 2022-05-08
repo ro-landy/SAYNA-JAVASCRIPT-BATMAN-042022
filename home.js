@@ -4,7 +4,6 @@ $(document).ready(function(){
 
     // Scroll event
     window.onscroll = function() {
-
         // Scroll aside
         $('aside').addClass('aside_move')
         $('h1').addClass('translate_title')

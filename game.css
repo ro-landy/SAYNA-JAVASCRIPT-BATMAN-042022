@@ -10,6 +10,19 @@
     background-repeat: no-repeat;
     height: 850px;
 }
+#navigation nav #logohome, header aside{
+    cursor: pointer;
+}
+header aside{
+    position: fixed;
+    top: 45%;
+    left: 89%;
+    transition: all .5s;
+    z-index: 1000;
+}
+:is(footer #icon) img{
+    cursor: pointer;
+}
 .top_bar{
     border-bottom: 2px solid #c4c4c46e;
     padding-bottom: 30px;
@@ -93,3 +106,50 @@ footer figure img{
     width: 25px;
     height: 25px;
 }
+
+/* Animation */
+.aside_move{
+    animation: move_aside .5s linear;
+}
+@keyframes move_aside {
+    from {top: 30%;}
+    to {top: 45%;}
+}
+.translate_title{
+    animation: translate_header 1s linear;
+}
+@keyframes translate_header {
+    from { 
+        opacity: .3;
+        margin-left: -15%;
+    }
+    to { 
+        opacity: 1;
+    }
+}
+.opacity_title{
+    animation: myopacity 1s linear;
+}
+@keyframes myopacity {
+    from { opacity: .2; }
+    to { opacity: 1; }
+}
+.btn-demarrer{
+    border: none;
+    background-image: linear-gradient(to bottom right, #EDDEBF, #890008);
+    opacity: .6;
+    transition: all .5s;
+}
+.btn-demarrer:hover{
+    opacity: 1;
+    transform: scale(1.1, 1.1);
+}
+.back1:hover{
+    background-color: #F8F184;
+    cursor: pointer;
+    color: black;
+}
+input[type="checkbox"]{
+    cursor: pointer;
+}
+/*

@@ -139,6 +139,7 @@ main .contact input, main .contact select{
 main .contact input[type="checkbox"]{
     width: 15px;
     height: 15px;
+    cursor: pointer;
 }
 main .contact label{
     font-size: 20px;

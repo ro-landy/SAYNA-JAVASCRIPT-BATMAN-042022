@@ -13,7 +13,7 @@
     <!-- barre de navigation -->
     <header id="navigation">
         <nav class="container d-flex justify-content-between top_bar">
-            <div class="mt-5 mx-5">
+            <div class="mt-5 mx-5" id="logohome">
                 <img src="assets/logos/logohome.png" alt="logo bat fleche">
             </div>
             <div class=" menu mt-5 mx-5">
@@ -27,11 +27,11 @@
             <h1 class="text-uppercase text-white texte fw-bold">LET'S PLAY <br> A LITTLE GAME...</h1>
         </div>
         <aside class="d-flex flex-column align-items-center">
-            <img src="assets/logos/logo_bat_flèche.png" alt="logo bat arrow up" width="80" height="40">
+            <a href="#navigation"><img src="assets/logos/logo_bat_flèche.png" alt="logo bat arrow up" width="80" height="40"></a>
             <img src="assets/logos/icon_facebook.png" alt="icon facebook" width="30" height="30" class="my-3"> 
             <img src="assets/logos/icon_ig.png" alt="icon instagram" width="30" height="30" class="my-3">
             <img src="assets/logos/icon_tw.png" alt="icon tweeter" width="30" height="30" class="my-3">
-            <img src="assets/logos/logo_bat_flèche_2.png" alt="logo bat arrow down" width="80" height="40">
+            <a href="#bottom"><img src="assets/logos/logo_bat_flèche_2.png" alt="logo bat arrow down" width="80" height="40"></a>
         </aside>
     </header>
     <main>
@@ -397,22 +397,22 @@
                 </div>
             </div>
             <!-- quiz niveau 2 -->
-            <h3 class="text-uppercase fw-bold fs-4 quiz2">quiz niveau 2 : Connaissez vous bien le chevalier noir ?</h3>
+            <h3 class="text-uppercase fw-bold fs-4 quiz2" id="bottom">quiz niveau 2 : Connaissez vous bien le chevalier noir ?</h3>
             <img class="imagedernier pt-4" src="assets/Illustrations/Game/Batgame2.png" alt="Batgame2">
-            <button id="redemarrer" class="btn btn-default fw-bold text-pink"><a href="#" class="text-uppercase text-white">demarrer le quiz</a></button>
+            <button id="redemarrer" class="btn btn-default fw-bold text-pink btn-demarrer"><a href="#" class="text-uppercase text-white">demarrer le quiz</a></button>
         </section>
 
         <!-- footer -->
     <footer>
         <p class="text-white text-center"><img src="assets/logos/icon_WB.png" alt="icon_WB"> Ce projet respecte l'Univers cinematographique des films Batman recents. Version Nonal & Snyder $Reeves</p>
         <figure>
-            <div class="d-flex justify-content-center mt-3">
-                <img src="assets/logos/logo_sayna_white.png" alt="logo_sayna_white" class="mx-2">
-                <img src="assets/logos/icon_x.png" alt="icon_x" class="mx-2">
-                <img src="assets/logos/icon_DC.png" alt="icon_DC" class="mx-2">
-                <img src="assets/logos/icon_facebook.png" alt="icon_facebook" class="mx-2">
-                <img src="assets/logos/icon_ig.png" alt="icon_ig" class="mx-2">
-                <img src="assets/logos/icon_tw.png" alt="icon_tw" class="mx-2">
+            <div class="d-flex justify-content-center mb-5" id="icon">
+                <img width="30" src="assets/logos/logo_sayna_white.png" alt="logo_sayna_white" class="mx-2">
+                <img width="30" src="assets/logos/icon_x.png" alt="icon_x" class="mx-2">
+                <img width="30" src="assets/logos/icon_DC.png" alt="icon_DC" class="mx-2">
+                <img width="30" src="assets/logos/icon_facebook.png" alt="icon_facebook" class="mx-2">
+                <img width="30" src="assets/logos/icon_ig.png" alt="icon_ig" class="mx-2">
+                <img width="30" src="assets/logos/icon_tw.png" alt="icon_tw" class="mx-2">
             </div>
         </figure>
     </footer>
@@ -420,4 +420,5 @@
 </body>
 <script src="assets/src/jquery.min.js"></script>
 <script src="assets/src/bootstrap.min.js"></script>
+<script src="game.js"></script>
 </html>
